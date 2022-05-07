@@ -13,7 +13,8 @@ $povzida=$vz*$sz;
 $povplocice=$vp*$sp;
 
 $br=$povzida / $povplocice;
-echo $br;
+$br=(round($br,1));
+echo "broj plocica potrebnih da se poploca zid $br";
 
 
 
