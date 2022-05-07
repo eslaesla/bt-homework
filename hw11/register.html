@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <form action="register.php" method="GET">
+        <Fieldset class="data">
+            <legend>
+                Podaci Korisnika
+            </legend>
+            <label for="name">Ime:</label><br>
+            <input type="text" name="name" id="name"  >
+            <br>
+            <label for="last-name">Prezime:</label><br>
+            <input type="text" name="last_name" id="last_name">
+            <br>
+            <br>
+            <label>Pol:</label>
+            <br><br>
+            <label for="male">Muski</label>
+            <input type="radio" name="gender" id="male" value="muski">
+            <br>
+            <label for="female">Zenski</label>
+            <input type="radio" name="gender" id="female" value="zenski">
+            <br>
+            <br>
+            <label for="email">E-mail adresa:</label> <br>
+            <input type="email" name="email" id="email" > 
+            <br>
+            <br>
+            <label for="password">Sifra (minimum 8 karaktera):</label>
+            <br>
+            <input type="password" placeholder=" Password" name="pass" id="pass" minlength="8">
+            <br><br>
+            <label for="password">Potvrdi sifru:</label><br>
+            <input type="password" placeholder="Confirm Password" name="confirm_pass" id="confirm_password"  minlength="8">
+            <br>
+            <br>
+            <br>
+            
+                <Label>Odaberi kurseve</Label>
+                <fieldset>
+                    <div class="kursevi">
+                        <input type="checkbox" name="kurs[]" id="php" value="php">
+                        <label for="php">PHP</label>
+                        <br>
+                        <input type="checkbox" name="kurs[]" id="html" value="html">
+                        <label for="html">HTML</label>
+                        <br>
+                        <input type="checkbox" name="kurs[]" id="js" value="js">
+                        <label for="js">JS</label>
+                        <br>
+                        <input type="checkbox" name="kurs[]" id="mysql" value="mysql">
+                        <label for="MySql">MySQL</label>
+                    </div>
+                        <br>
+                        <br>
+                        <button class="button" type="submit"  style="width: 200px; height: 50px;">Sacuvaj</button>
+                        <br><br>
+                        <button class="button" >Izbrisi</button>
+                        </fieldset>
+        </Fieldset>
+    </form>
+
+
+    </form>
+    
+</body>
+</html>
