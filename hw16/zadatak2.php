@@ -4,9 +4,9 @@
 // Mnogo sam se iznapeo sa zadatak, sa Foreach ne moze da se offsetuje petlja, sa FOR moze.
 function racunskeoperacije($niz, $default="+")
 {
-
+    $sub=NULL;
      if($default=="+"){
-        array_sum($niz);
+        $sub=array_sum($niz);
      }
      if($default=='-'){
          $sub=$niz[0];
@@ -32,12 +32,8 @@ function racunskeoperacije($niz, $default="+")
      
  }
 
-
-
-    
-
 $niz=[9,3,2];
-echo racunskeoperacije($niz,"/");
+echo racunskeoperacije($niz,"-");
 
 
 
